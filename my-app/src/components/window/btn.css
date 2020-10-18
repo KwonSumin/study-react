@@ -1,0 +1,10 @@
+.sm-button{
+    padding : 5px 10px 5px 10px;
+    border : 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+.sm-button:hover{
+    background-color: cornflowerblue;
+}

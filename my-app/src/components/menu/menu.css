@@ -1,0 +1,38 @@
+.sm-menu{
+    color : black;
+    text-decoration: none;
+    border : 1px solid black;
+    padding : 15px 25px;
+    background-color : cornflowerblue;
+    display : inline-block;
+    cursor: pointer;
+    user-select: none;
+    position : relative;
+}
+.sm-menu:visited{
+    cursor: pointer;
+}
+.sm-menu:active{
+    cursor: pointer;
+}
+.sm-menu:hover{
+    background-color: deepskyblue;
+}
+.sm-submenu{
+    color : black;
+    text-decoration: none;
+    border : 1px solid black;
+    padding : 15px 25px;
+    background-color: grey;
+    display: block;
+    position : relative;
+    cursor: pointer;
+    user-select: none;
+}
+.sm-submenu:hover{
+    background-color: lemonchiffon;
+}
+div.sm-sublist-wrapper{
+    display : none;
+    position: fixed;
+}

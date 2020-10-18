@@ -1,0 +1,13 @@
+.board-body span{
+    border : 1px solid black;
+    display: inline-block;
+}
+.board-body-idx{
+    width : 40;
+}
+.board-body-title{
+    width : 200px;
+}
+.board-body-name{
+    width : 100px;
+}

@@ -3,12 +3,21 @@ import Memo from "./body/memo";
 
 class Body extends Component {
     render(){
+        const {memos} = this.props;
+        var memoList = memos.map(
+            ({id, memo})=>(
+                <Memo
+                    key={id} 
+                    memo={memo}
+                    oncloseMemo={"teset"}
+                />
+            )
+        );
         return (
             <div>
-                <Memo memo="Test Memo"/>
-                <Memo memo="Test Memo2"/>
+                {memoList}
             </div>
-        )
+        );
     }
 }
 export default Body;

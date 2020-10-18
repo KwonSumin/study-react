@@ -1,0 +1,11 @@
+div.sm-window{
+    border : 1px solid black;
+    width : 300px;
+}
+.sm-window-head{
+    height : 20px;
+    border-bottom : 1px solid black;
+}
+.sm-window-body{
+    height : 400px;
+}

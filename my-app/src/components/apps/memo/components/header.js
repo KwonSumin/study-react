@@ -4,7 +4,9 @@ class Header extends Component {
     render(){
         return (
             <div>
-                <span>X</span>
+                <span onClick={(e)=>{
+                    this.props.onCreateMemo();
+                }}>X</span>
             </div>
         )
     }

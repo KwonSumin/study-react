@@ -1,0 +1,7 @@
+.sm-btn {
+    border-radius: 20px / 20px;
+    background-color: cyan;
+    display: inline-block;
+    padding: 5px 4% 5px 4%;
+    overflow: hidden;
+}

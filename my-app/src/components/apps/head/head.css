@@ -1,0 +1,14 @@
+div.sm-top-menu ol{
+    list-style-type: none !important;
+}
+div.sm-top-menu li{
+    border : 1px solid black;
+    display: inline-block;
+    padding : 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    background-color: gold;
+}
+div.sm-top-menu li:hover{
+    background-color: darkseagreen;
+}

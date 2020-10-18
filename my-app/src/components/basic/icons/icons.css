@@ -1,0 +1,11 @@
+.sm-icon-wrapper{
+    display: inline-block;
+    border : solid transparent 1px ;
+}
+.sm-icon-wrapper.selected{
+    background-color: darkgrey;
+    border: dotted dodgerblue 1px;
+}
+.sm-icon-wrapper.selected .sm-icon-title{
+    background-color: dodgerblue;
+}
