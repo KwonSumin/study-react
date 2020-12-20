@@ -1,35 +1,23 @@
+import React, {Component} from 'react';
 
-class Map {
+var Cmm = {};
+
+class CustComponent extends Component{
     constructor(props){
-        this.state = {
-            name : [],
-            value : []
-        }   
-    }
-    put = function(key, value){
-        var findNmIdx = this.state.name.indexOf(key);
-        var isNotFind = findNmIdx == -1;
-        if( isNotFind ) {
-            findNmIdx = this.state.name.length;
-        }
-        this.state.name[findNmIdx] = key;
-        this.state.value[findNmIdx] = value
-    }
-    toString = function(){
-        var str = "";
-        var name;
-        var value;
-        for(var i=0; i<this.state.name.length; i++) {
-            name = this.state.name[i];
-            value = this.state.value[i];
-            str +=name + " : " + value;
-            if( i<this.state.name.length-1 ) {
-                str += ", "
+        super(props);
+        for(var key in props) {
+            if( key.substr(0, 2) == "on" ) {
+                console.log(key)
+                
             }
         }
-
-        return str;
     }
-}
 
-export default {Map};
+    //전체이벤트 리스너 수행.
+    handle(name,e){
+        console.log(name);
+    }
+
+}
+Cmm = {...Cmm, CustComponent}
+export default Cmm;

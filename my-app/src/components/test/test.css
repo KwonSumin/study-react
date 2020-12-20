@@ -1,0 +1,29 @@
+.sm-btn-item{
+    color : black;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.sm-btn{
+    border : 1px solid black;
+}
+.sm-btn-small{
+    width : 100px;
+    height : 20px;
+}
+.btn-middle{
+    width : 150px;
+    height : 25px;
+}
+.btn-middle{
+    width : 200px;
+    height : 30px;
+}
+
+.test{
+
+    width : 400px; height : 400px;
+
+}

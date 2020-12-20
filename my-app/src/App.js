@@ -1,27 +1,31 @@
-import React, {useEffect, useState, useRef, useCallback} from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import Head from './components/head'
+import Side from './components/side'
+import Foot from './components/foot'
+import Content from './components/content'
 import './App.css';
-import Head from './components/apps/head/head';
 
+//import { BrowserRouter, Link } from 'react-router-dom';
 
-//import Apps
-import Button from './components/fns/button'
 function App() {
-  let [state, setState] = useState("0");
-  let btn = useRef(null);
-  function onClick(e){
-    setState(parseInt(state) + 1 );
+
+  function test(name, e){
+    console.log("test");
   }
 
-  console.log(btn.current)
-  
   return (
     <>
-      <Head />
-      <input readOnly value={state} />
-      <Button onClick={onClick} ref={btn}  />
+      <div className="sm-layout">
+        <Head />
+        <div className="sm-main">
+          <Side classNm="sm-lside"/>
+          <Content />
+        </div>
+        <Foot/>
+      </div>
     </>
   );
+
 }
 
 
